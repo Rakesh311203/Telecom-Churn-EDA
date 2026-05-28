@@ -29,6 +29,8 @@ The project is constructed chronologically across five operational phases design
 ### Phase 3: Bivariate & Multivariate Exploration
 * Cross-examined categorical billing types against temporal metrics using grouped box plots split by target categories.
 * Engineered a binary target variable (`Churn_Numeric`) to compute a clean Pearson correlation matrix, revealing linear dependency links between pricing models and retention lifespans.
+<img width="1169" height="470" alt="1" src="https://github.com/user-attachments/assets/ce7b413f-c7b8-46ad-ac40-a9ba3d8473d6" />
+
 
 ---
 
@@ -44,6 +46,8 @@ Grouped box plots reveal that subscribers on Month-to-month terms who drop out e
 
 ### 3. Pearson Metric Multipliers
 The continuous feature heatmap identifies customer lifespan (`tenure`) as the primary continuous negative correlate to attrition (-0.35). Conversely, high monthly fees carry a positive correlation value (+0.19) to customer exit events, validating recurring cost friction.
+<img width="764" height="470" alt="2" src="https://github.com/user-attachments/assets/158c468c-44b4-491f-8a34-d103c13defa1" />
+
 
 ---
 
@@ -52,6 +56,9 @@ The continuous feature heatmap identifies customer lifespan (`tenure`) as the pr
 Based on the statistical shapes discovered during EDA, the business should implement two targeted operational adjustments:
 1. **The Contract Migration Play:** Deploy automated promotional triggers targeting high-utilization Month-to-Month accounts between months 3 and 5, offering a targeted 10% loyalty credit if they switch to a 1-year contract tier.
 2. **Premium Cohort Proactive Safety Net:** Establish automated customer success outreach workflows at Day 30 and Day 90 for any new subscriber carrying high monthly charges (exceeding \$80) to smooth installation issues before cost friction triggers.
+<img width="637" height="528" alt="3" src="https://github.com/user-attachments/assets/cbbc862b-d91e-42bd-b546-b699d3648714" />
+
+
 
 ---
 
@@ -73,3 +80,5 @@ cd telecom-churn-eda
 
 # Run Jupyter Notebook
 jupyter notebook
+
+
